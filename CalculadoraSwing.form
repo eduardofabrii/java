@@ -3,235 +3,192 @@
   <grid id="27055" binding="painel" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
-      <xy x="20" y="20" width="714" height="591"/>
+      <xy x="20" y="20" width="836" height="591"/>
     </constraints>
     <properties/>
-    <border type="none"/>
+    <border type="empty"/>
     <children>
-      <grid id="41d18" binding="painelMain" layout-manager="GridLayoutManager" row-count="14" column-count="10" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+      <grid id="41d18" binding="painelMain" layout-manager="GridLayoutManager" row-count="11" column-count="10" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
         <margin top="0" left="0" bottom="0" right="0"/>
         <constraints>
           <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <background color="-65595"/>
+          <background color="-12077053"/>
           <font name="Berlin Sans FB Demi" size="26" style="1"/>
+          <inheritsPopupMenu value="false"/>
+          <verifyInputWhenFocusTarget value="true"/>
         </properties>
-        <border type="none"/>
+        <border type="empty"/>
         <children>
-          <component id="165d3" class="javax.swing.JButton" binding="calcularButton" default-binding="true">
-            <constraints>
-              <grid row="2" column="8" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
-                <maximum-size width="250" height="100"/>
-              </grid>
-            </constraints>
-            <properties>
-              <icon value="imagens/icones_calculadora.png"/>
-              <text value="Calcular"/>
-            </properties>
-          </component>
           <component id="3a77f" class="javax.swing.JLabel">
             <constraints>
               <grid row="0" column="0" row-span="1" col-span="10" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <font name="Arial Black" size="26"/>
+              <font name="Berlin Sans FB Demi" size="26"/>
+              <foreground color="-16777216"/>
               <text value="Super Calculadora"/>
             </properties>
           </component>
-          <component id="71b72" class="javax.swing.JLabel">
-            <constraints>
-              <grid row="2" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-            </constraints>
-            <properties>
-              <text value="Informe um valor: "/>
-            </properties>
-          </component>
-          <component id="b2857" class="javax.swing.JSpinner" binding="spinnerValue">
-            <constraints>
-              <grid row="2" column="4" row-span="1" col-span="4" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
-            </constraints>
-            <properties/>
-          </component>
-          <hspacer id="4af0a">
-            <constraints>
-              <grid row="3" column="0" row-span="1" col-span="10" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-            </constraints>
-          </hspacer>
-          <hspacer id="258cb">
-            <constraints>
-              <grid row="4" column="0" row-span="1" col-span="10" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-            </constraints>
-          </hspacer>
-          <hspacer id="4d43e">
-            <constraints>
-              <grid row="5" column="0" row-span="1" col-span="10" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-            </constraints>
-          </hspacer>
-          <component id="6bf8e" class="javax.swing.JLabel" binding="resultDivision">
-            <constraints>
-              <grid row="7" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-            </constraints>
-            <properties>
-              <foreground color="-13947163"/>
-              <text value="0"/>
-            </properties>
-          </component>
-          <component id="fb3f3" class="javax.swing.JLabel">
-            <constraints>
-              <grid row="8" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-            </constraints>
-            <properties>
-              <text value="Elevado ao Cubo"/>
-            </properties>
-          </component>
-          <component id="a7980" class="javax.swing.JLabel" binding="resultCube">
-            <constraints>
-              <grid row="8" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-            </constraints>
-            <properties>
-              <foreground color="-13947163"/>
-              <text value="0"/>
-            </properties>
-          </component>
-          <component id="8c8e6" class="javax.swing.JLabel">
-            <constraints>
-              <grid row="9" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-            </constraints>
-            <properties>
-              <text value="Raiz Quadrada"/>
-            </properties>
-          </component>
-          <component id="a2c9b" class="javax.swing.JLabel" binding="resultRaiz">
-            <constraints>
-              <grid row="9" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-            </constraints>
-            <properties>
-              <foreground color="-13947163"/>
-              <text value="0"/>
-            </properties>
-          </component>
-          <component id="f154c" class="javax.swing.JLabel">
-            <constraints>
-              <grid row="10" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-            </constraints>
-            <properties>
-              <text value="Raiz Cúbica"/>
-            </properties>
-          </component>
-          <component id="129f7" class="javax.swing.JLabel" binding="resultRaizC">
-            <constraints>
-              <grid row="10" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-            </constraints>
-            <properties>
-              <foreground color="-13947163"/>
-              <text value="0"/>
-            </properties>
-          </component>
-          <component id="59b42" class="javax.swing.JLabel">
-            <constraints>
-              <grid row="11" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-            </constraints>
-            <properties>
-              <text value="Valor Absoluto"/>
-            </properties>
-          </component>
-          <component id="57f73" class="javax.swing.JLabel" binding="resultValueAbs">
-            <constraints>
-              <grid row="11" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-            </constraints>
-            <properties>
-              <foreground color="-13947163"/>
-              <text value="0"/>
-            </properties>
-          </component>
-          <component id="1594f" class="javax.swing.JLabel">
-            <constraints>
-              <grid row="7" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-            </constraints>
-            <properties>
-              <text value="Resto da Divisão por 2"/>
-            </properties>
-          </component>
-          <vspacer id="2cd3e">
-            <constraints>
-              <grid row="12" column="0" row-span="2" col-span="8" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
-            </constraints>
-          </vspacer>
-          <vspacer id="7100c">
-            <constraints>
-              <grid row="6" column="0" row-span="1" col-span="8" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
-            </constraints>
-          </vspacer>
-          <hspacer id="3d6eb">
-            <constraints>
-              <grid row="8" column="6" row-span="1" col-span="2" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-            </constraints>
-          </hspacer>
-          <hspacer id="8a3f8">
-            <constraints>
-              <grid row="7" column="6" row-span="1" col-span="2" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-            </constraints>
-          </hspacer>
-          <hspacer id="632f0">
-            <constraints>
-              <grid row="9" column="6" row-span="1" col-span="2" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-            </constraints>
-          </hspacer>
-          <hspacer id="f86b0">
-            <constraints>
-              <grid row="10" column="6" row-span="1" col-span="2" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-            </constraints>
-          </hspacer>
-          <hspacer id="3d74a">
-            <constraints>
-              <grid row="11" column="6" row-span="1" col-span="2" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-            </constraints>
-          </hspacer>
-          <hspacer id="b114">
-            <constraints>
-              <grid row="7" column="3" row-span="1" col-span="2" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-            </constraints>
-          </hspacer>
-          <hspacer id="58071">
-            <constraints>
-              <grid row="8" column="3" row-span="1" col-span="2" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-            </constraints>
-          </hspacer>
-          <hspacer id="ea89a">
-            <constraints>
-              <grid row="9" column="3" row-span="1" col-span="2" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-            </constraints>
-          </hspacer>
-          <hspacer id="fd3cf">
-            <constraints>
-              <grid row="10" column="3" row-span="1" col-span="2" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-            </constraints>
-          </hspacer>
-          <hspacer id="5c43b">
-            <constraints>
-              <grid row="11" column="3" row-span="1" col-span="2" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-            </constraints>
-          </hspacer>
-          <vspacer id="b16f7">
-            <constraints>
-              <grid row="7" column="2" row-span="5" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
-            </constraints>
-          </vspacer>
-          <hspacer id="b4296">
-            <constraints>
-              <grid row="1" column="0" row-span="1" col-span="9" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-            </constraints>
-          </hspacer>
           <component id="84d78" class="javax.swing.JLabel" binding="imgCalc">
             <constraints>
-              <grid row="6" column="8" row-span="8" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <grid row="1" column="8" row-span="10" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                <minimum-size width="500" height="-1"/>
+              </grid>
             </constraints>
             <properties>
               <icon value="imagens/calculadora.png"/>
               <text value=""/>
             </properties>
           </component>
+          <grid id="98337" binding="painelResults" layout-manager="GridLayoutManager" row-count="5" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="6" column="0" row-span="3" col-span="8" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-12077053"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="1594f" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Resto da Divisão por 2"/>
+                </properties>
+              </component>
+              <component id="6bf8e" class="javax.swing.JLabel" binding="resultDivision">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <foreground color="-13947163"/>
+                  <text value="0"/>
+                </properties>
+              </component>
+              <component id="a2c9b" class="javax.swing.JLabel" binding="resultRaiz">
+                <constraints>
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <foreground color="-13947163"/>
+                  <text value="0"/>
+                </properties>
+              </component>
+              <component id="fb3f3" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Elevado ao Cubo"/>
+                </properties>
+              </component>
+              <component id="8c8e6" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Raiz Quadrada"/>
+                </properties>
+              </component>
+              <component id="f154c" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Raiz Cúbica"/>
+                </properties>
+              </component>
+              <component id="59b42" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Valor Absoluto"/>
+                </properties>
+              </component>
+              <component id="a7980" class="javax.swing.JLabel" binding="resultCube">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <foreground color="-13947163"/>
+                  <text value="0"/>
+                </properties>
+              </component>
+              <component id="129f7" class="javax.swing.JLabel" binding="resultRaizC">
+                <constraints>
+                  <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <foreground color="-13947163"/>
+                  <text value="0"/>
+                </properties>
+              </component>
+              <component id="57f73" class="javax.swing.JLabel" binding="resultValueAbs">
+                <constraints>
+                  <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <foreground color="-13947163"/>
+                  <text value="0"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <component id="165d3" class="javax.swing.JButton" binding="calcularButton" default-binding="true">
+            <constraints>
+              <grid row="3" column="0" row-span="2" col-span="8" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                <maximum-size width="250" height="100"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-592129"/>
+              <icon value="imagens/icones_calculadora.png"/>
+              <text value="Calcular"/>
+            </properties>
+          </component>
+          <hspacer id="639a4">
+            <constraints>
+              <grid row="5" column="0" row-span="1" col-span="8" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </hspacer>
+          <hspacer id="730a8">
+            <constraints>
+              <grid row="9" column="0" row-span="2" col-span="8" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </hspacer>
+          <grid id="38cb8" binding="fromValue" layout-manager="GridLayoutManager" row-count="2" column-count="8" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="1" column="0" row-span="2" col-span="8" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-12077051"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="b2857" class="javax.swing.JSpinner" binding="spinnerValue">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="8" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-12077051"/>
+                </properties>
+              </component>
+              <component id="71b72" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="8" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Informe um valor: "/>
+                </properties>
+              </component>
+            </children>
+          </grid>
         </children>
       </grid>
     </children>

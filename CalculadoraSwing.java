@@ -15,11 +15,15 @@ public class CalculadoraSwing {
     private JLabel resultRaizC;
     private JLabel resultValueAbs;
     private JPanel painel;
+    private JPanel painelResults;
+    private JPanel fromValue;
 
     public CalculadoraSwing() {
+        painelResults.setVisible(false);
         calcularButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                painelResults.setVisible(true);
                 int value = (int) spinnerValue.getValue();
 
                 float resto = (float) value % 2;
@@ -29,10 +33,10 @@ public class CalculadoraSwing {
                 resultCube.setText(String.valueOf(cube));
 
                 float raizQ = (float) sqrt(value);
-                resultRaiz.setText(String.valueOf(raizQ));
+                resultRaiz.setText(String.format("%.2f", raizQ));
 
                 float raizC = (float) cbrt(value);
-                resultRaizC.setText(String.valueOf(raizC));
+                resultRaizC.setText(String.format("%.2f", raizC));
 
                 float absoluteValue = (float) abs(value);
                 resultValueAbs.setText(String.valueOf(absoluteValue));
@@ -46,5 +50,6 @@ public class CalculadoraSwing {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
         frame.setVisible(true);
+        frame.setResizable(false);
     }
 }
