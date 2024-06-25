@@ -56,7 +56,7 @@ public class Aprendendo {
         z = 12;
         boolean r;
         r = (x<y ^ y<z)?true:false;
-        System.out.println(r); */
+        System.out.println(r);
 
         Scanner teclado = new Scanner(System.in);
 
@@ -74,6 +74,40 @@ public class Aprendendo {
         } else {
             System.out.println("Média menor que 9!");
         }
+        Scanner teclado = new Scanner(System.in);
+        System.out.print("Quantas pernas? ");
+        int perna = teclado.nextInt();
+        String tipo;
+        System.out.print("Isso é um(a) ");
+        switch (perna) {
+            case 1:
+                tipo = "Saci";
+                break;
+            case 2:
+                tipo = "Bípede";
+                break;
+            case 3:
+                tipo = "Tripé";
+                break;
+            default:
+                tipo = "Louco.";
+
+        }
+        System.out.println(tipo); */
+
+        /*
+        int contador = 0;
+
+        while (contador < 10) {
+            contador++;
+            if (contador == 6) {
+                break;
+            }
+            System.out.println("Cambalhota | Número " + contador);
+
+        for (int contador=1; contador<=101; contador+=10) {
+            System.out.println(contador);
+        } */
 
 
 
