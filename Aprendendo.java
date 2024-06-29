@@ -1,11 +1,32 @@
 import java.awt.*;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.Locale;
 import java.util.Scanner;
 
 
 public class Aprendendo {
+
+    static int somar(int a, int b) {
+        int s = a + b;
+        return s;
+    }
+
+    public static String contador(int i, int f) {
+        String s = "";
+        for (int c = i; c <= f; c++) {
+            s += c + " ";
+        }
+        return s;
+    }
+
     public static void main(String[] args) {
+        int chamandoFuncao = somar(2, 3);
+        System.out.println(chamandoFuncao);
+
+        String chamar = contador(1, 5);
+        System.out.println(chamar);
+
         /* int n1 = 3;
         int n2 = 5;
         float media = (n1 + n2) / 2;
@@ -107,9 +128,46 @@ public class Aprendendo {
 
         for (int contador=1; contador<=101; contador+=10) {
             System.out.println(contador);
-        } */
+        }
+
+        int n[] = {9, 2, 3, 6, 10};
+
+        System.out.println("Total de casas de N " + n.length);
+        for (int c=0; c<=n.length; c++) {
+            System.out.println("Na posição "+ (c+1) + " temos o valor " + n[c]);
+        }
 
 
+        String mes[] = {"Jan", "Fev", "Mar", "Abr", "Mai",
+                "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"};
 
+        int diaAno[] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+
+        for (int c = 0; c < mes.length; c++) {
+            System.out.println("O mês de " + mes[c] + " tem " +
+                    diaAno[c] + " dias ao todo.");
+        }
+
+        int n[] = {1, 3, 6, 2, 9, 8};
+
+        for (int valor: n) {
+            System.out.print(valor + " ");
+        }
+
+        int pos = Arrays.binarySearch(n, 6);
+        System.out.println("Encontrei o valor na posição " + pos);
+
+        int v[] = new int[20];
+        Arrays.fill(v, 0);
+
+        for (int valor: v) {
+            System.out.print(valor + " ");
+        }
+        */
+
+        Fatorial f = new Fatorial();
+        f.setValor(5);
+        System.out.print(f.getFormula());
+        System.out.println(f.getFatorial());
     }
 }
